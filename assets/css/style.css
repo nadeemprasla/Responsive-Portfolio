@@ -1,0 +1,184 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    box-sizing:border-box
+ }
+ body{
+      background-image: url(../images/triangle-mosaic.png);
+    
+}
+.container{
+    max-width: 1024px;
+    margin: auto;
+    z-index: 3;
+}
+.topnav{
+    border-bottom: 1px solid black;
+}
+.content {
+    width: 70%;
+}
+.name{
+    background-color: teal;
+    color:white;
+    float: left;
+    font-size: 40px;
+    font-weight:    ;
+    padding: 30px 40px;
+    font-family: 'Grenze', serif;
+    letter-spacing: 5px;
+}
+.navlink{
+    float:right;
+    font-size:20px;
+    margin: 20px 0px;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+.navlink:hover{
+    box-shadow: 5px 5px 40px red;
+    background-color: darkslategray;
+    color:white;
+}
+.navlink:focus{
+    color:blue;
+}
+
+.linkborder {
+    border-right: 1px solid gray;
+}
+
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+      }
+
+
+.aboutme{
+    border: 1px solid black;
+    margin: 10px auto;
+    background-color: white;
+    
+
+}
+.aboutme h2{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-bottom: 30px;
+    margin: 30px 30px;
+    border-bottom: 1px solid black;
+    
+}
+.aboutme p{
+    line-height: 1.5;
+    margin: 20px;
+    font-size: 20px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+}
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    height: 200px;
+    resize: none;
+}
+form{
+    margin: 0 30px;
+}
+input[type=submit]{
+    padding: 5px 20px;
+    margin: 0 0 10px 0;
+    background-color: teal;
+    color: white;
+}
+.portimage{
+    margin: 0px 20px 20px 30px;
+}
+
+
+#copyright{
+    background-color: gray;
+    position: fixed ;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    
+
+    padding-top: 20px;
+}
+
+#copyright footer{
+    color: white;
+    text-align: center;
+    margin: 0;;
+    padding-bottom: 15px;
+}
+
+.aboutme img{
+    margin: 0px 30px 20px 30px;
+}
+
+
+
+
+@media screen and (max-width: 980px) {
+    body {
+      background-color: #333;
+    }
+  
+    .container {
+      width: 100%;
+    }
+  
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      background-color: #333;
+      background-image: none;
+    }
+.name{
+    width: 40%;
+}
+.navlink{
+    color:white
+}
+.content{
+    width:768px;
+    margin: auto;
+}
+    .container {
+      width: auto;
+    }
+  
+  }
+  @media screen and (max-width: 640px) {
+    body {
+      background-color: #333;
+          }
+    .content{
+        width: 640px;
+        
+    }
+    
+    .container {
+      width: 640px;
+    }
+    .name{
+        float: none;
+        width: 640px;
+        text-align: center;
+    }
+    .sidenav{
+        width: 500px;
+    }
+
+    }
